@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset = "utf-8">
+        <title>Facebook UI Survey</title>
+        <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+		<link href="styles/SEG3125_Module1Lab_Webpage.css" rel="stylesheet">
+		<style type = "text/css">
+			body{
+				background-image: url("images/WebpageBackground.jpg");
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+			}
+			.likert li {
+				float: left;
+				list-style-type: none;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class = "text-center">
+			<h1><p>What do think of the 
+			<a href="https://www.facebook.com/">Facebook</a>'s user interface?
+			</p></h1>
+			
+			<a href="https://www.facebook.com/">
+				<img src="images/fonctionnalites-facebook.png"/>
+			</a>
+		</div>
+		
+		<br>
+		
+		<div class = "Div3">
+		<form method = "post">
+			<div class = "Div2">
+			<p><label><strong>Name:</strong>
+				<input name = "name" id = "name" type = "text" autocomplete = "on" size = "25">
+			</label></p>
+			<p><label><strong>Email:</strong>
+				<input name = "email" id = "email" type = "text" autocomplete = "on" size = "25">
+			</label></p>
+			
+			
+			<p>
+				<label for="birthday">
+					<strong>When is your date of birth?</strong>
+				</label>
+				<input type="date" id="birthday" name="birthday">
+			</p>
+			
+			<strong>What is your gender?</strong>
+			<p>
+				<label>
+					<input name = "Gender" id="male" type = "radio" value = "Male">Male
+				</label>
+				<label>
+					<input name = "Gender" id="female" type = "radio" value = "Female">Female
+				</label>
+				<label>
+					<input name = "Gender" id="other" type = "radio" value = "Other">Other
+				</label>
+			</p>
+			
+			<strong>How long have you been using Facebook?</strong>
+			<p>
+				<label>
+					<select name = "Year" id = "year">
+						<option selected>First time using</option>
+						<option>around a month or less</option>
+						<option>a few months, less than a year</option>
+						<option>around a year</option>
+						<option>more than one year</option>
+					</select>
+				</label>
+			</p>
+			
+			<strong>What part of Facebook UI do you like the most?</strong>
+			<p>				
+				<label>
+					<input name = "choise" id = "functions" type = "checkbox" value = "functions">
+					Everything functions properly
+				</label></br>
+				<label>
+					<input name = "choise" id = "notifications" type = "checkbox" value = "notifications">
+					Visible notifications
+				</label></br>
+				<label>
+					<input name = "choise" id = "pop-up" type = "checkbox" value = "pop-up">
+					News pop-up
+				</label></br>
+				<label>
+					<input name = "choise" id = "accessibility" type = "checkbox" value = "accessibility">
+					Easy to access
+				</label></br>
+				<label>
+					<input name = "choise" id = "other" type = "checkbox" value = "Other">
+					Other
+				</label></br>
+			</p>
+			
+			<br>
+			
+			<strong>How much would you like to rate you Facebook UI experience?</strong>
+			<p>
+				<ul class="likert">
+				<li> 1 star </li>
+				<li><input type="radio" id = "1star" name="guilty" value="1" /></li>
+				<li><input type="radio" id = "2star" name="guilty" value="2" /></li>
+				<li><input type="radio" id = "3star" name="guilty" value="3" /></li>
+				<li><input type="radio" id = "4star" name="guilty" value="4" /></li>
+				<li><input type="radio" id = "5star" name="guilty" value="5" /></li>
+				<li> 5 stars </li>
+			</ul>
+			</p>
+			
+			<br>
+			
+			<p><label><strong>Extra Comments:</strong><br>
+				<textarea name = "Comments" id = "comments" rows = "4" cols = "36">Enter Comments here.</textarea>
+			</p></label>
+			
+			
+			<br>
+			
+			<p>
+				<input type = "submit" value = "Submit">
+				<input type = "reset" value = "Reset">
+			</p>
+			
+			<h2><footer>
+				Website designed by Robert Zhang (300077171)
+			</footer></h2>
+			
+			</div>
+		</form>
+		</div>
+	</body>
+</html>

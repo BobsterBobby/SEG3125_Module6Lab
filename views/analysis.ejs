@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Analysis</title>
+
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <link href="/styles/SEG3125_Module1Lab_Webpage.css" rel="stylesheet" type="text/css" />
+    
+    </head>
+
+    <body>
+        <div id="results">
+            <ul>
+                <% for(var i = 0; i < analysis.length; i++){ %>
+                    <li><%= analysis[i].item %></li>
+
+                <% } %>
+            </ul>
+        </div>
+    </body>
+</html>
